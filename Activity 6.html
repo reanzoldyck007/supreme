@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Photos</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-image: url("fire.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+        }
+
+        tr:first-child {
+            height: 10%;
+        }
+
+        td:first-child {
+            width: 20%;
+            text-align: center;
+        }
+
+        #rPanel {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .preview-image {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+            margin: 10px;
+            overflow: hidden; /* Add overflow to hide the excess image content */
+        }
+
+        .preview-image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain image aspect ratio */
+        }
+
+        .preview-image:hover {
+            box-shadow: 0 0 0 5px #ff0000; /* Add a box shadow to simulate the border */
+        }
+.home-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.home-icon img {
+  width: 60px;
+  height: 60px;
+}
+    </style>
+</head>
+<body>
+<a href="homepage.html" class="home-icon"><img src="images/home.png" alt="Home"></a>
+    <table>
+        <tr>
+            <td colspan="2">
+                <h1>My Photos</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <iframe id="photosFrame" src="photos.html" frameborder="0" style="height: 100%; width: 100%;"></iframe>
+            </td>
+            <td>
+                <iframe id="rPanel" name="rPanel" frameborder="0" style="height: 100%; width: 100%;"></iframe>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        window.addEventListener("message", function (event) {
+            if (event.data.type === "photoClick") {
+                const imageURL = event.data.url;
+                const rPanelFrame = document.getElementById("rPanel").contentWindow;
+                rPanelFrame.postMessage({ type: "displayPhoto", url: imageURL }, "*");
+            }
+        });
+    </script>
+</body>
+</html>

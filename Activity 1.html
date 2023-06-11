@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Viewer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #pdf-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0px; /* Adjusted to make space for the logo */
+            overflow: hidden;
+        }
+
+        #pdf-embed {
+            width: 100%;
+            height: 100%;
+        }
+
+        #logo-link {
+            position: fixed;
+            bottom: 10px;
+            left: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pdf-container">
+        <embed id="pdf-embed" src="Who am i.pdf" type="application/pdf" />
+    </div>
+    <a id="logo-link" href="homepage.html">
+        <img src="images/home.png" alt="Logo" width="70" height="70">
+    </a>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<title>Bohol Map</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+}
+body{
+background-color: #ffff;}
+
+.container{
+display: block;
+margin-left: 12%;  
+ margin-right: 12%; 
+border: 8px ridge black;  
+padding: 5px;   
+position: absolute; 
+}
+
+.address-main{
+position: absolute;
+left: 140px; 
+top: 370px;
+
+}
+
+.text{
+font-family: Arial Narrow;
+font-size: 18px;
+font-weight:700; 
+}
+.tooltiptext p{
+
+color: #444;
+text-align: left;
+display: inline-block;
+padding-top: 6px;}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: rgb(255,255,255,0.9);  
+  border-radius: 6px;
+  padding: 8px 18px;
+  position: absolute;
+  z-index: 1;
+}
+.tooltiptext:after{
+
+position: absolute;
+top: -20px;
+lrft: 125px;
+border-width: 10px;
+border-color: transpaerent transpaerent transparent #fff transparent}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.home-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.home-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('.bohol-map').maphilight();
+  });
+  </script>
+</head>
+
+
+
+
+<body>
+<a href="homepage.html" class="home-icon"><img src="images/home.png" alt="Home"></a>
+<div class="container">
+<img src="images/Bohol.jpg" usemap="#img-map" class="bohol-map">
+<map name="img-map">
+ <area shape="poly"
+       coords="197,402,157,358,149,359,141,371,127,388,121,392,117,401,114,412,108,419,103,427,106,434,103,448,106,463,108,478,169,434,"
+	    coords="110,351,102,347,98,351,92,347,83,348,85,365,89,373,100,363"
+	   target="_blank" 
+       alt="Loon" 
+	   title="Loon" 
+       href="loonasd.html">
+<area alt="Loon" title="Loon" href="" coords="110,351,102,347,98,351,92,347,83,348,85,365,89,373,100,363" shape="poly">
+  <area target="Loon" alt="Loon" title="" href="" coords="107,372,119,371,130,379,124,383,114,386,105,381" shape="poly">
+
+</map>
+
+<div class="address-main">
+<div class="tooltip">
+<img src="images/mark.png" alt="marking" width="30" height="30">
+<div class="tooltiptext">
+<div class="text">Loon</div>
+
+<p>Population(2020): 44,224</p>
+<p>Population(2015): 43,034</p>
+<p>Population(2010): 42,800</p>
+<p>Population(2000): 45,215</p>
+<p>Number of households (2000): 2,669</p>
+<p>
+<a href="https://www.loon.gov.ph/" target="_blank">Loon Municipality</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+          
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friend Registry Form</title>
+  <style>
+    /* Styling the Body element i.e. Color, Font, Alignment */
+    body {
+      background-image: url(assets/img/portfolio/portfolio-10.jpg);
+      background-size: 100% 100%; /* Adjusted property */
+      background-repeat: no-repeat; /* Added property */
+      font-family: Verdana;
+      text-align: center;
+    }
+
+    /* Styling the Form (Color, Padding, Shadow) */
+    form {
+      background-color: #f2f2f2;
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Styling form-control Class */
+    .form-control {
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    /* Styling form-control Label */
+    .form-control label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* Styling form-control input, select, textarea */
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+      border: 1px solid #777;
+      border-radius: 2px;
+      font-family: inherit;
+      padding: 10px;
+      display: block;
+      width: 95%;
+    }
+
+    /* Styling form-control Radio button and Checkbox */
+    .form-control input[type="radio"],
+    .form-control input[type="checkbox"] {
+      display: inline-block;
+      width: auto;
+    }
+
+    /* Styling Button */
+    button {
+      background-color: #05c46b;
+      border: none;
+      border-radius: 20px;
+      font-family: inherit;
+      font-size: 21px;
+      display: block;
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0a8f5c;
+    }
+.home-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.home-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+  </style>
+</head>
+
+<body>
+<a href="homepage.html" class="home-icon"><img src="images/home.png" alt="Home"></a>
+  <h1>Friend Registry Form</h1>
+
+  <!-- Create Form -->
+  <form id="form">
+    <!-- Details -->
+    <div class="form-control">
+      <label for="name" id="label-name">Name</label>
+      <!-- Input Type Text -->
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-control">
+      <label for="middlename" id="label-middlename">Middle Name</label>
+      <!-- Input Type Text -->
+      <input type="text" id="middlename" placeholder="Enter your middle name">
+    </div>
+
+    <div class="form-control">
+      <label for="lastname" id="label-lastname">Last Name</label>
+      <!-- Input Type Text -->
+      <input type="text" id="lastname" placeholder="Enter your last name" required>
+    </div>
+
+    <div class="form-control">
+      <label for="birthdate" id="label-birthdate">Birthdate</label>
+      <!-- Input Type Date -->
+      <input type="date" id="birthdate" required>
+    </div>
+
+    <div class="form-control">
+      <label for="age" id="label-age">Age</label>
+      <!-- Input Type Number -->
+      <input type="number" id="age" placeholder="Enter your age" required>
+    </div>
+
+    <div class="form-control">
+      <label for="zodiac" id="label-zodiac">Zodiac Sign</label>
+      <!-- Input Type Select -->
+      <select name="zodiac" id="zodiac" required>
+        <option value="">Select your zodiac sign</option>
+        <option value="aries">Aries</option>
+        <option value="taurus">Taurus</option>
+        <option value="gemini">Gemini</option>
+        <option value="cancer">Cancer</option>
+        <option value="leo">Leo</option>
+        <option value="virgo">Virgo</option>
+        <option value="libra">Libra</option>
+        <option value="scorpio">Scorpio</option>
+        <option value="sagittarius">Sagittarius</option>
+        <option value="capricorn">Capricorn</option>
+        <option value="aquarius">Aquarius</option>
+        <option value="pisces">Pisces</option>
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label for="address" id="label-address">Address</label>
+      <!-- Input Type Select -->
+      <select name="address" id="address" required>
+        <option value="">Select your country</option>
+        <option value="A">Canada</option>
+        <option value="B">Philippines</option>
+        <option value="C">Japan</option>
+        <option value="D">Korea</option>
+        <option value="E">Pakistan</option>
+        <option value="F">China</option>
+        <option value="G">Europe</option>
+        <!-- Add more countries as needed -->
+      </select>
+    </div>
+
+    <div class="form-control">
+      <label class="gender-label">Gender</label>
+      <!-- Input Type Radio -->
+      <label for="gender-male">
+        <input type="radio" id="gender-male" name="gender" value="male" required>
+        Male
+      </label>
+      <label for="gender-female">
+        <input type="radio" id="gender-female" name="gender" value="female" required>
+        Female
+      </label>
+      <label for="gender-others">
+        <input type="radio" id="gender-others" name="gender" value="others" required>
+        Others
+      </label>
+    </div>
+
+    <div class="form-control">
+      <label for="phone" id="label-phone">Phone Number</label>
+      <!-- Input Type Text -->
+      <input type="text" id="phone" placeholder="Enter your phone number" required>
+    </div>
+
+    <div class="form-control">
+      <label for="email" id="label-email">Email</label>
+      <!-- Input Type Email-->
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" value="submit">Submit</button>
+  </form>
+</body>
+</html>

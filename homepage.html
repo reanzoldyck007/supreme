@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Homepage</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Folio
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the transition overlay element
+      var transitionOverlay = document.getElementById('transition-overlay');
+
+      // Add a click event listener to all links with the class 'details-link'
+      var links = document.getElementsByClassName('details-link');
+      Array.from(links).forEach(function(link) {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+
+          // Add the active class to the transition overlay
+          transitionOverlay.classList.add('active');
+
+          // Wait for the transition to complete, then redirect to the new page
+          setTimeout(function() {
+            window.location.href = link.getAttribute('href');
+          }, 300);
+        });
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <!-- Uncomment below if you prefer to use an text logo -->
+      <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link  scrollto" href="#portfolio">Works</a></li>
+          <li><a class="nav-link  scrollto" href="index.html">Portfolio</a></li>
+          
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="home">
+
+    <div class="container">
+      <div class="hero-content">
+        <h1>I'm <span class="typed" data-typed-items="Edrean Supremo, Designer, Programmer , Gamer"></span></h1>
+        <p>Designer, Programmer ,Gamer</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="https://www.facebook.com/rean.zoldyck"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="https://twitter.com/reandevous/"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/reandevous/"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/reandevous8891/"><i class="bi bi-youtube"></i></a></li>
+          <li><a href="https://www.twitch.tv/reanzxc"><i class="bi bi-twitch"></i></a></li>
+          <li><a href="https://steamcommunity.com/profiles/76561199124886227"><i class="bi bi-steam"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="assets/img/me.jpg" class="img-responsive" alt="me">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr">
+
+              <p class="p-heading">I am a first-year student pursuing a degree in Computer Engineering at the University of Bohol. </p>
+              <p class="separator">Along with my academic journey, I have developed a passion for solving puzzles and diving into the world of video games. As an aspiring engineer, I find joy in tackling complex problems and seeking innovative solutions. When I'm not engrossed in coding or designing circuits, you can often find me immersed in the virtual realms of video games, exploring new worlds and honing my strategic skills. I am driven by curiosity, determined to push boundaries, and eager to contribute to the ever-evolving field of technology.</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services">
+      <div class="container">
+
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-bounding-box"></i>
+                <span>PUZZLES</span>
+                <p class="separator">I am an avid puzzle enthusiast, continuously drawn to their intricate challenges.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-code"></i>
+                <span>DEVELOPER</span>
+                <p class="separator">Captivated by HTML designs, I constantly explore their creative possibilities.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-bar-chart"></i>
+                <span>WEB DESIGN</span>
+                <p class="separator">Enthusiastic about web designs, I explore endless creative potentials.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-binoculars"></i>
+                <span>VIDEO GAMES</span>
+                <p class="separator">Passionate gamer, immersed in virtual worlds, seeking thrilling adventures.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-lightbulb-fill"></i>
+                <span>KNOWLEDGE</span>
+                <p class="separator">Quick learner, absorbing knowledge with remarkable speed and efficiency.</p>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </div><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>My Works</h2>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Me</li>
+              <li data-filter=".filter-card">Quotes</li>
+              <li data-filter=".filter-web">Map</li>
+	      <li data-filter=".filter-webpage">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Know me!</h4>
+              <p>Me</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Know me!"><i class="bx bx-plus"></i></a>
+              <a href="Activity 1.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>About me</h4>
+              <p>Me</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="About me"><i class="bx bx-plus"></i></a>
+              <a href="Activity 2.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Social Media</h4>
+              <p>Me</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Social Media"><i class="bx bx-plus"></i></a>
+              <a href="Activity 3.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Family</h4>
+              <p>Me</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Family"><i class="bx bx-plus"></i></a>
+              <a href="Activity 4.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-webpage">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>CSS UNITS</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="CSS UNITS"><i class="bx bx-plus"></i></a>
+              <a href="Activity 5.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Pictures of me</h4>
+              <p>Me</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Pictures of me"><i class="bx bx-plus"></i></a>
+              <a href="Activity 6.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+	<div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4> Life Quotes</h4>
+              <p>Quotes</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Life Quotes"><i class="bx bx-plus"></i></a>
+              <a href="Activity 7.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+	<div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Funny me!</h4>
+              <p>Me</p>
+              <a href="assets/img/portfolio/portfolio-8.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Funny me!"><i class="bx bx-plus"></i></a>
+              <a href="Activity 8.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+	<div class="col-lg-4 col-md-6 portfolio-item filter-webpage">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>A day in University of Bohol</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="A day in University of Bohol"><i class="bx bx-plus"></i></a>
+              <a href="Activity 9.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+	<div class="col-lg-4 col-md-6 portfolio-item filter-webpage">
+            <img src="assets/img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Friend Registry</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Friend Registry"><i class="bx bx-plus"></i></a>
+              <a href="Activity 10.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+	<div class="col-lg-4 col-md-6 portfolio-item filter-webpage">
+            <img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Related</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Related"><i class="bx bx-plus"></i></a>
+              <a href="Activity 11.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+	<div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Quotations</h4>
+              <p>Quotes</p>
+              <a href="assets/img/portfolio/portfolio-12.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Quotations"><i class="bx bx-plus"></i></a>
+              <a href="Activity 12.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+		
+	<div class="col-lg-4 col-md-6 portfolio-item filter-webpage">
+            <img src="assets/img/portfolio/portfolio-13.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Spreedsheet</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-13.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Spreedsheet"><i class="bx bx-plus"></i></a>
+              <a href="Activity 13.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+	<div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-14.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Loon Map</h4>
+              <p>Map</p>
+              <a href="assets/img/portfolio/portfolio-14.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Loon Map"><i class="bx bx-plus"></i></a>
+              <a href="Activity 14.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!-- End Portfolio Section -->
+
+    
+    <!-- ======= Contact Section ======= -->
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
+
+            <div class="col-lg-6">
+              <div class="contact-contact">
+
+                <h2 class="mb-30">GET IN TOUCH</h2>
+
+                <ul class="contact-details">
+                  <li><span>Purok 5 Supremo Store</span></li>
+                  <li><span>Basdacu, Loon, Bohol</span></li>
+                  <li><span>+63 9810007844</span></li>
+                  <li><span>ersupremo@universityofbohol.edu.ph</span></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row gy-3">
+
+                  <div class="col-lg-6">
+                    <div class="form-group contact-block1">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+
+                  <div class="mt-0">
+                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/rean.zoldyck"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="https://twitter.com/reandevous/"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/reandevous/"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/reandevous8891/"><i class="bi bi-youtube"></i></a></li>
+          <li><a href="https://www.twitch.tv/reanzxc"><i class="bi bi-twitch"></i></a></li>
+          <li><a href="https://steamcommunity.com/profiles/76561199124886227"><i class="bi bi-steam"></i></a></li>
+        </ul>
+
+      </div>
+
+      
+
+    </div>
+  </div><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+<div id="transition-overlay" class="transition-overlay"></div>
+
+</body>
+
+</html>
